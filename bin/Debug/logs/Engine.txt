@@ -1,0 +1,7 @@
+14:56:32 - Error: 0(2) : error C1067: too little data in type constructor
+
+14:56:32 - Error: Vertex info
+-----------
+0(2) : error C1067: too little data in type constructor
+(0) : error C2003: incompatible options for link
+
