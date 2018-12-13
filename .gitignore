@@ -1,0 +1,7 @@
+BigEninge/.vs/
+* .vcxproj.user
+* .vcxproj.user
+BigEninge/bin/Debug/intermediates/
+BigEninge/bin/Debug/logs/*.*
+BigEninge/bin/Release/intermediates/
+BigEninge/bin/Release/logs/*.*
