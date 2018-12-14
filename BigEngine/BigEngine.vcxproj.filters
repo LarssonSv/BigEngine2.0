@@ -36,13 +36,19 @@
     <ClCompile Include="helpers\StringHelper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="math\Color.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="helpers\FileHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="engine\Engine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="engine\Window.cpp">
+    <ClCompile Include="engine\ShaderProgram.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="math\Color.cpp">
+    <ClCompile Include="engine\Window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -68,13 +74,19 @@
     <ClInclude Include="helpers\StringHelper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="math\Color.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="helpers\FileHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="engine\Engine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="engine\Window.h">
+    <ClInclude Include="engine\ShaderProgram.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="math\Color.h">
+    <ClInclude Include="engine\Window.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

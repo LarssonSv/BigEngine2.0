@@ -1,20 +1,18 @@
 #pragma once
 
-namespace Big {
-
+namespace Big
+{
 	class Color
 	{
-
-		
 	public:
 		Color();
-		Color(float red, float green, float blue, float alpha = 1.0f);
 		Color(const Color& copyColor);
+		Color(float red, float green, float blue, float alpha = 1.0f);
 		~Color();
 
-		float operator[](int index);
+		float& operator [](int index);
 
-		//red,green,blue,alpha 0.0 - 1.0
+		// Red, Green, Blue Alpha. Values 0.0 - 1.0
 		float color[4];
 
 		static const Color White;
@@ -24,6 +22,4 @@ namespace Big {
 		static const Color Green;
 		static const Color Blue;
 	};
-
-
 }

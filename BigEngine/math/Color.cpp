@@ -1,12 +1,13 @@
 #include "Color.h"
-#include "assert.h"
 
-const Big::Color Big::Color::White			(1.0f, 1.0f, 1.0f, 1.0f);
-const Big::Color Big::Color::Black			(0.0f, 0.0f, 0.0f, 1.0f);
-const Big::Color Big::Color::Transparent	(0.0f, 0.0f, 0.0f, 0.0f);
-const Big::Color Big::Color::Red			(1.0f, 0.0f, 0.0f, 1.0f);
-const Big::Color Big::Color::Green			(0.0f, 1.0f, 0.0f, 1.0f);
-const Big::Color Big::Color::Blue			(0.0f, 0.0f, 1.0f, 1.0f);
+#include <assert.h>
+
+const Big::Color Big::Color::White(1.0f, 1.0f, 1.0f, 1.0f);
+const Big::Color Big::Color::Black(0.0f, 0.0f, 0.0f, 1.0f);
+const Big::Color Big::Color::Transparent(0.0f, 0.0f, 0.0f, 0.0f);
+const Big::Color Big::Color::Red(1.0f, 0.0f, 0.0f, 1.0f);
+const Big::Color Big::Color::Green(0.0f, 1.0f, 0.0f, 1.0f);
+const Big::Color Big::Color::Blue(0.0f, 0.0f, 1.0f, 1.0f);
 
 Big::Color::Color()
 {
@@ -32,13 +33,11 @@ Big::Color::Color(float red, float green, float blue, float alpha /*= 1.0f*/)
 	color[3] = alpha;
 }
 
-float Big::Color::operator [](int index)
+Big::Color::~Color()
+{}
+
+float& Big::Color::operator[](int index)
 {
 	assert(index >= 0 && index < 4);
 	return color[index];
-}
-
-Big::Color::~Color()
-{
-
 }

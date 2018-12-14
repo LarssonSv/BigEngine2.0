@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../math/Color.h"
+
 #include <string>
 
 struct GLFWwindow;
@@ -24,20 +25,18 @@ namespace Big
 		};
 
 		static bool InitializeRenderSystem();
-		static void DeinitalizeRenderSystem();
+		static void DeinitializeRenderSystem();
 
-		bool Create(Settings setting);
+		bool Create(Settings windowSettings);
 		void Destroy();
 		bool Closing();
 
 		void BeginRender();
 		void EndRender();
-		
 
 	private:
 		GLFWwindow* glWindow;
 
 		Settings settings;
-	
 	};
 }

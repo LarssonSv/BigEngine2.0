@@ -1,6 +1,6 @@
 #pragma once
 
-#include "string"
+#include <string>
 
 namespace Big
 {
@@ -20,6 +20,6 @@ namespace Big
 		Window* window = nullptr;
 
 		const std::string logPath = "./logs/";
-		const std::string engineLog = "Engine.txt";
+		const std::string engineLog = "engine.txt";
 	};
 }
